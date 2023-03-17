@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="timer.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<title>Timer PWM</title>
+</head>
+<body>
+<main class="blur">
+</main>
+<span class="min">52</span>
+    <span class="colon">:</span>
+    <span id="sec">45</span>
+    <h2 id="current-time"> </h2>
+
+  <!---- <div id="daytime"> <h2 class="hrs">4</h2>
+        <h4 class="colon2">:</h4>
+        <h2 id="min2">34</h2>
+        <h4 class="colon3">:</h4>
+        <h2 class="sec2">48</h2>
+        <h4 class="colon4">:</h4>
+        <h2 class="period">AM</h2> </div> -->
+       <script>
+            let time = document.getElementById("current-time");
+
+            setInterval(() => {
+                let d = new Date(); 
+            time.innerHTML = d.toLocaleTimeString();   
+            },1000);
+
+
+
+       </script>
+</body>
+</html>
